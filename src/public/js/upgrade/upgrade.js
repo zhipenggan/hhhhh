@@ -106,7 +106,7 @@ function sendUpgrade() {
 
     upgradeId = setInterval(function () {
         checkUpgradeResult();
-    }, 1000);
+    }, 5000);
 
     $.ajax({
         method: "POST",

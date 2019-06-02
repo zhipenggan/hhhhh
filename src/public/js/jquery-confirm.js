@@ -965,7 +965,7 @@
                     that['$$' + button_key].trigger('click');
                     that._stopCountDown();
                 }
-            }, 1000);
+            }, 5000);
         },
         _getKey: function(key){
             // very necessary keys.

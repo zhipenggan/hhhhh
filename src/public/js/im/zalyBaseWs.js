@@ -38,7 +38,7 @@ function ZalyIm(params)
                     syncMsgForRoom();
                 }catch (error) {
                 }
-            }, 1000);
+            }, 5000);
     } else {
         var webSocketGw = webSocketGwDomain + wsUrlSuffix;
         if(webSocketGwDomain.length > 1) {

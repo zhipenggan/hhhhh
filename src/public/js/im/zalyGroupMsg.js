@@ -923,7 +923,7 @@ function setDocumentTitle()
                         }
                         iconNum = Number(iconNum+1);
                     }
-                }, 100);
+                }, 5000);
             }
             return ;
         }
