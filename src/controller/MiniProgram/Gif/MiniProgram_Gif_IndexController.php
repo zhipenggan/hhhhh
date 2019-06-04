@@ -2,12 +2,6 @@
 
 use Zaly\Proto\Core\MessageRoomType;
 
-/**
- * Created by PhpStorm.
- * User: zhangjun
- * Date: 05/09/2018
- * Time: 2:27 PM
- */
 
 class MiniProgram_Gif_IndexController extends MiniProgram_BaseController
 {
