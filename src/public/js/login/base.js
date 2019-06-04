@@ -80,14 +80,14 @@ function isAvailableBrowser(){
 var isDuckchatFlag = $(".isDuckchat").val();
 var isPhoneFlag = isPhone();
 
-if(isPhoneFlag && isDuckchatFlag == 0) {
-    $(".site-warning")[0].style.display='flex';
-    var tip = "暂不支持手机浏览器，请使用手机客户端或者PC访问站点！";
-    if(languageName == "en") {
-        tip = "Mobile browser is not supported at this time, please use the mobile client or PC to access the site!";
-    }
-    $(".site-warning").html(tip);
-}
+// if(isPhoneFlag && isDuckchatFlag == 0) {
+//     $(".site-warning")[0].style.display='flex';
+//     var tip = "暂不支持手机浏览器，请使用手机客户端或者PC访问站点！";
+//     if(languageName == "en") {
+//         tip = "Mobile browser is not supported at this time, please use the mobile client or PC to access the site!";
+//     }
+//     $(".site-warning").html(tip);
+// }
 
 if(isPhoneFlag == false) {
     var isAvailabelBrowserFlag = isAvailableBrowser();

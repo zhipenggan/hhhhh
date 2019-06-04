@@ -16,6 +16,7 @@
             height: 100%;
         }
         .zaly_container {
+            overflow-y: scroll;
             height: 85%;
         }
         .gif {
@@ -102,9 +103,9 @@
     var languageNum = getLanguage();
 
     function isMobile() {
-        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-            return true;
-        }
+        // if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        //     return true;
+        // }
         return false;
     }
 

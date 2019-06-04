@@ -125,9 +125,11 @@ function getOsType() {
     } else {
         clientType = "PC";
     }
+    clientType = "PC";
 }
 
 function isMobile() {
+    return false;
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
         return true;
     }
@@ -136,11 +138,13 @@ function isMobile() {
 
 //是否是android客户端
 function isAndroid() {
+    return false;
     return clientType.toLowerCase() == "android"
 }
 
 //是否为iOS客户端
 function isIOS() {
+    return false;
     return clientType.toLowerCase() == "ios"
 }
 
@@ -193,12 +197,12 @@ function zalyjsOpenPage(url) {
 
 //-public
 function zalyjsOpenNewPage(url) {
-    if (isMobile()) {
-        zalyjsNavOpenPage(url);
-    } else {
+    // if (isMobile()) {
+    //     zalyjsNavOpenPage(url);
+    // } else {
         //new page
         window.open(url, "_blank");
-    }
+    // }
 }
 
 //-public
@@ -220,11 +224,14 @@ function zalyjsLoginSuccess(loginName, sessionid, isRegister, userCustoms, callb
     messageBody = JSON.stringify(messageBody);
 
     if (isAndroid()) {
-        window.Android.zalyjsLoginSuccess(messageBody)
+        // window.Android.zalyjsLoginSuccess(messageBody)
+        loginPcClient(messageBody, callback);
     } else if (isIOS()) {
-        window.webkit.messageHandlers.zalyjsLoginSuccess.postMessage(messageBody)
+        // window.webkit.messageHandlers.zalyjsLoginSuccess.postMessage(messageBody)
+        loginPcClient(messageBody, callback);
     } else {
         loginPcClient(messageBody, callback);
+        // loginPcClient(messageBody, callback);
     }
 }
 
