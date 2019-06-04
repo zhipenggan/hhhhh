@@ -7,7 +7,7 @@
     </div>
 </div>
 
-<div class="plugin-right-body" style="overflow: hidden">
+<div class="plugin-right-body" style="-webkit-overflow-scrolling:touch;overflow:auto!important;">
 
     <iframe src="" class="plugin-src plugin-iframe"   onload="window.name=self.document.title" ></iframe>
 
