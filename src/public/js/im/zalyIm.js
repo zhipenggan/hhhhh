@@ -63,7 +63,7 @@ function reConnectWs()
             return;
         }
         createWsConnect();
-    },5000);
+    },1000);
 
 }
 
